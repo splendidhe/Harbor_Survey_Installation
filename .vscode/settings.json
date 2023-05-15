@@ -1,0 +1,8 @@
+{
+    "git.repositoryScanIgnoredFolders": [
+        "node_modules",
+        "MDK-ARM\\MDK-ARM.code-workspace",
+        "F:\\keil_MDK\\stm32cubemx\\Harbor_Survey_Installation\\MDK-ARM\\.cmsis\\include",
+        "F:\\keil_MDK\\stm32cubemx\\Harbor_Survey_Installation\\MDK-ARM\\.eide"
+    ]
+}
