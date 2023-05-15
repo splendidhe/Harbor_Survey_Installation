@@ -42,7 +42,7 @@
  uint16_t Adc_buffer[6]; // ADC采集数据缓存
 /*
     数组数据
-    Adc_buffer[0]  --  雷电传感器
+    Adc_buffer[0]  --  XXX传感器  
     Adc_buffer[1]  --  风速传感器
     Adc_buffer[2]  --  风向传感器
     Adc_buffer[3]  --  浊度传感器
@@ -157,8 +157,7 @@ int main(void)
         ADC_Process_Function();   // ADC数据处理函数
         JY61P_Output();     // JY61P输出
         HCSR04_Detect();    // 超声波检测
-        PARSE_GPRMC();      // 解析GPRMC
-        // GPS_Analysis();     // GPS数据解析
+        GPS_Analysis();     // GPS数据解析
         Mqtt_Senddata();    // MQTT发送数据                                                                                                                          // 串口3中断接收
         HAL_UART_RxCpltCallback(&huart4);
         HAL_Delay(1000);          // 延时1s

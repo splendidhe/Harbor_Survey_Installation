@@ -566,8 +566,8 @@ void PARSE_GPRMC(void)
 	char *subString; 
 	char *subStringNext;  
 	char i = 0;
-    memset(USART2_RX_BUF,0,sizeof(USART2_RX_BUF));  // 清空缓存
-    sprintf((char *)USART2_RX_BUF, "$GPRMC,123519.12,A,4807.0388,N,12204.2817,W,0.0,0.0,230394,,,A*6A"); // 模拟GPRMC数据
+    // memset(USART2_RX_BUF,0,sizeof(USART2_RX_BUF));  // 清空缓存
+    // sprintf((char *)USART2_RX_BUF, "$GPRMC,123519.12,A,4807.0388,N,12204.2817,W,0.0,0.0,230394,,,A*6A"); // 模拟GPRMC数据
     for (i = 0; i <= 6; i++)				//获取6段数据
     {
         if (i == 0)
