@@ -9,7 +9,9 @@
 /bin
 /obj
 /out
-
+/.vscode
 # eide template
 *.ept
 *.eide-template
+.vscode/settings.json
+MDK-ARM/RTE/MDK-ARM.code-workspace
